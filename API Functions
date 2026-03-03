@@ -1,0 +1,23 @@
+mkdir -p api
+
+# Gateway function
+cat > api/gateway.js << 'JS'
+export default function handler(req, res) {
+  res.json({
+    status: "ok",
+    service: "gateway",
+    message: "OpenClaw ECC Gateway Active"
+  });
+}
+JS
+
+# API function
+cat > api/api.js << 'JS'
+export default function handler(req, res) {
+  res.json({
+    status: "ok", 
+    service: "api",
+    message: "OpenClaw ECC API Active"
+  });
+}
+JS
