@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm build:plugin-sdk:dts",
-  "outputDirectory": "dist",
+  "outputDirectory": "public",
   "installCommand": "pnpm install --ignore-scripts",
   "framework": null,
   "functions": {
