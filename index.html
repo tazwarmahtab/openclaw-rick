@@ -1,0 +1,21 @@
+cat > public/index.html << 'HTML'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenClaw ECC</title>
+</head>
+<body>
+    <h1>OpenClaw ECC System</h1>
+    <p>Hybrid AI Agent System with ECC Integration</p>
+    <div id="status">Loading...</div>
+    <script>
+        fetch('/api/health')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('status').innerHTML = 
+                    '<h2>✅ System Status: Online</h2>';
+            });
+    </script>
+</body>
+</html>
+HTML
