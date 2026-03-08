@@ -1,0 +1,68 @@
+{
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "files.associations": {
+    "*.md": "markdown",
+    "*.ts": "typescript",
+    "*.js": "javascript",
+    "*.json": "json",
+    "*.toml": "toml",
+    "*.yaml": "yaml",
+    "*.yml": "yaml"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": false,
+    "**/.DS_Store": true,
+    "**/*.log": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.log": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.env.linux": {
+    "PATH": "/usr/local/bin:/usr/bin:/bin"
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.rulers": [100],
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vs-seti",
+  "extensions.ignoreRecommendations": false,
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html"
+  }
+}

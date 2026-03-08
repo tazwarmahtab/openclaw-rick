@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug OpenClaw Gateway",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/openclaw/openclaw.mjs",
+      "args": ["gateway", "run", "--bind", "loopback", "--port", "18789", "--force"],
+      "cwd": "${workspaceFolder}/openclaw",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "NODE_ENV": "development",
+        "OPENCLAW_PROFILE": "dev"
+      }
+    },
+    {
+      "name": "Debug OpenClaw TUI",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/openclaw/openclaw.mjs",
+      "args": ["tui"],
+      "cwd": "${workspaceFolder}/openclaw",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "NODE_ENV": "development",
+        "OPENCLAW_PROFILE": "dev"
+      }
+    },
+    {
+      "name": "Debug ECC Extension",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/openclaw/extensions/ecc-integration/src/index.ts",
+      "cwd": "${workspaceFolder}/openclaw",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "NODE_ENV": "development",
+        "OPENCLAW_PROFILE": "dev"
+      }
+    },
+    {
+      "name": "Attach to OpenClaw Process",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

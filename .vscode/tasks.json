@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-openclaw",
+      "type": "shell",
+      "command": "cd openclaw && pnpm build",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "start-openclaw-gateway",
+      "type": "shell",
+      "command": "cd openclaw && ./openclaw.mjs gateway run --bind 0.0.0.0 --port 18789 --force",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "start-openclaw-tui",
+      "type": "shell",
+      "command": "cd openclaw && ./openclaw.mjs tui",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "install-dependencies",
+      "type": "shell",
+      "command": "cd openclaw && pnpm install",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "run-tests",
+      "type": "shell",
+      "command": "cd openclaw && pnpm test",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "doctor-check",
+      "type": "shell",
+      "command": "cd openclaw && ./openclaw.mjs doctor",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}
